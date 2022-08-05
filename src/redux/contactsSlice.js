@@ -23,6 +23,11 @@ export const contactsSlice = createSlice({
 
 export const { addContact, removeContact, setFilter } = contactsSlice.actions;
 
+// SELECTORS
+
+export const getFilter = state => state.contacts.filter;
+export const getContacts = state => state.contacts.items;
+
 // =====================BACKUP VERSION=======================
 
 // import { addContact, removeContact, setFilter } from './contactsActions';
