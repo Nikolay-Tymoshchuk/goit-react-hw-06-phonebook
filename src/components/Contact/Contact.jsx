@@ -18,6 +18,8 @@ export const Contact = ({ options: { id, name, number } }) => {
   );
 };
 
+// PROP TYPES
+
 Contact.propTypes = {
   options: PropTypes.exact({
     id: PropTypes.string.isRequired,

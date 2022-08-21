@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid';
 import { Form, Field, Button } from './ContactForm.styled';
 import { addContact } from 'redux/contactsSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { getContacts } from 'redux/contactsSlice';
+import { getContacts } from 'redux/selectors';
 
 export function ContactForm() {
   const dispatch = useDispatch();

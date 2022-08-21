@@ -20,6 +20,8 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, contactsSlice.reducer);
 
+// STORE
+
 export const store = configureStore({
   reducer: {
     contacts: persistedReducer,
@@ -31,5 +33,7 @@ export const store = configureStore({
       },
     }),
 });
+
+// PERSISTOR
 
 export const persistor = persistStore(store);
